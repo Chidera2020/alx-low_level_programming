@@ -11,12 +11,12 @@ int main(void)
 
 	for (d1 = '0'; d1 <= '9'; d1++)
 	{
-		for (d2 = d1 + 1; d2 <= '9'; d2++)
-		{
-			for (d3 = d2 + 1; d3 <= '9'; d3++, n++)
-			{
-				if (n > 0)
-				{
+	for (d2 = d1 + 1; d2 <= '9'; d2++)
+	{
+	for (d3 = d2 + 1; d3 <= '9'; d3++, n++)
+	{
+	if (n > 0)
+	{
 					putchar(',');
 					putchar(' ');
 				}

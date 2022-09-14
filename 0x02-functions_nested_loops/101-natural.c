@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 /**
  * main - entry
  *
@@ -13,11 +14,13 @@ int main(void)
 	int max = 1024;
 
 	int sum = 0;
+
+	for (start = 1; start < max; start++)
 	{
 		if ((start % 3 == 0) || (start % 5 == 0))
 			sum += start;
 	}
-printf("%d\n", sum);
+	printf("%d\n", sum);
 
 	return (0);
 }

@@ -1,37 +1,42 @@
-#include <stdio.h>
+#include "main.h"
 
-int main(void)
+/**
+ * print_number - Prints a passed number to stdout
+ *
+ * @n: Simply define the number to be printed
+ *
+ * Return: Null Void
+ */
+
+void print_number(int n)
 
 {
-	int n;
 
-	int a[5];
+	unsigned int m, d, count;
 
-	int *p;
+	if (n < 0)
+	{
+		_putchar(45);
 
-	a[2] = 1024;
+		m = n * -1;
+	}
+	else
+	{
+		m = n;
 
-	p = &n;
+	}
+	d = m;
 
-	/*
-	 * write your line of code here...
-	 *
-	 * Remember:
-	 *
-	 * you are not allowed to use a
-	 *
-	 * you are not allowed to modify p
-	 *
-	 * only one statement
-	 *
-	 * you are not allowed to code anything else than this line of code
-	 */
+	count = 1;
 
-	p[5] = 98;
+	while (d > 9)
+	{
+		d /= 10;
 
-	/* ...so that this prints 98\n */
-
-	printf("a[2] = %d\n", a[2]);
-
-	return (0);
+		count *= 10;
+	}
+	for (; count >= 1; count /= 10)
+	{
+		_putchar(((m / count) % 10) + 48);
+	}
 }

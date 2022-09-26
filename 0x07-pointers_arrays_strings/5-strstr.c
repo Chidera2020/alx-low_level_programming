@@ -2,7 +2,7 @@
 
 /**
  * _strstr - function locate
- * 
+ *
  * @haystack: pointer to char
  *
  * @needle: pointer to char

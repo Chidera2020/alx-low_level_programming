@@ -1,5 +1,5 @@
-nclude <stdlib.h>
-#include <stdio.h>
+nclude < stdlib.h >
+#include < stdio.h >
 #include "main.h"
 
 /**
